@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <style type='text/scss'>
 
-@mixin border-stroke($val){
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <style type='text/scss'>
+
+    @mixin border-stroke($val){
   @if $val == light{
     border: 1px solid black;
   }
@@ -22,6 +24,13 @@
   }
 }
 
+@for $j from 1 to 6 {
+  .text-#{$j}{
+    font-size: 15px*$j;
+  }
+}
+
+
   #box {
     width: 150px;
     height: 150px;
@@ -30,6 +39,12 @@
   }
 </style>
 
-<div id="box"></div>
-  </body>
+  <div id="box"></div>
+  <p class="text-1">Hello</p>
+  <p class="text-2">Hello</p>
+  <p class="text-3">Hello</p>
+  <p class="text-4">Hello</p>
+  <p class="text-5">Hello</p>
+</body>
+
 </html>
