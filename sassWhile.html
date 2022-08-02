@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<style type='text/scss'>
+
+  $x:1;
+@while $x<6
+{
+.text-#{$x}{
+  font-size: 15px*$x;
+}
+$x:$x+1;
+}
+
+
+</style>
+
+<body>
+  <p class="text-1">Hello</p>
+  <p class="text-2">Hello</p>
+  <p class="text-3">Hello</p>
+  <p class="text-4">Hello</p>
+  <p class="text-5">Hello</p>
+</body>
+
+</html>
